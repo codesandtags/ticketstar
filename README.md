@@ -2,23 +2,21 @@
 
 ## Motivation
 
-This is a Proof of Concept, about how to create microservices using NodeJS, Express and React. This project contains a monorepo which represents the microservices to manage a blog website.
-
 ## Features
 
 This project uses:
 
 - [x] Monorepo approach
-- [x] Add logger in express with `Winston`
-- [x] Manage environment variables with `dotenv` dependency.
+- [ ] Add logger in express with `Winston`
+- [ ] Manage environment variables with `dotenv` dependency.
 - [ ] Add swagger open API v3 definitions.
 - [ ] Add postman collections
 
 ## Wish list
 
-- [x] Add prettier and eslint
+- [ ] Add prettier and eslint
 - [ ] Add Husky pre-commit configuration
-- [x] Add Docker or Kubernate to manage the Microservices in containers
+- [ ] Add Docker or Kubernate to manage the Microservices in containers
 - [ ] Add a load balancer with nginx to scale up or scale down the number of microservices
 
 ## Architecture

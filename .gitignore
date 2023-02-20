@@ -7,6 +7,8 @@
 # Only exists if Bazel was run
 /bazel-out
 
+dist
+
 # dependencies
 node_modules
 node_modules/*
@@ -41,6 +43,7 @@ npm-debug.log
 yarn-error.log
 testem.log
 /typings
+logs
 
 # System Files
 .DS_Store
