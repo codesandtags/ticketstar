@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: auth
-          image: codesandtags/auth:latest
+          image: us.grc.io/codesandtags-projects/auth
           env:
             - name: PORT
               value: '4000'

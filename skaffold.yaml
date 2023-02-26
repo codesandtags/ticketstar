@@ -3,10 +3,12 @@ kind: Config
 metadata:
   name: ticketstar
 build:
-  local:
-    push: false
+  #  local:
+  #    push: false
+  googleCloudBuild:
+    projectId: codesandtags-projects
   artifacts:
-    - image: codesandtags/auth
+    - image: us.grc.io/codesandtags-projects/auth
       context: auth
       docker:
         dockerfile: Dockerfile
@@ -17,3 +19,4 @@ build:
 manifests:
   rawYaml:
     - infra/k8s/auth-deploy.yaml
+    - infra/k8s/ingress-service.yaml

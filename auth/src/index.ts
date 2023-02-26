@@ -1,4 +1,4 @@
-import express from 'express';
+import express, { Request, Response } from 'express';
 import cors from 'cors';
 import { json } from 'body-parser';
 import logger from './logger';
@@ -13,6 +13,11 @@ app.use(json());
 app.use(cors());
 
 // Adding routs
+app.get('/api/users/currentuser', (req: Request, res: Response) => {
+  res.status(200).send({
+    message: 'Oigan a mi tio, ome gonorrea, ome! 🙈',
+  });
+});
 
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
